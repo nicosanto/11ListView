@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/uni"
+
+    android:orientation="vertical"
+    tools:context="nicosanto.a11listview.DetalleActivity">
+
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="23sp"
+        android:textColor="@color/colorBlanco"
+        tools:text="@string/Email" />
+
+    <TextView
+        android:id="@+id/txtRemitente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:textColor="@color/colorBlanco"
+        tools:text="@string/Remitente" />
+
+    <TextView
+        android:id="@+id/txtAsunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:textColor="@color/colorBlanco"
+        tools:text="@string/Asunto" />
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorBlanco"
+        android:text="@string/Mensaje" />
+</LinearLayout>

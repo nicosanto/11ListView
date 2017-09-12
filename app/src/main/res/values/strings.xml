@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">11ListView</string>
+    <string name="Circulo">N</string>
+    <string name="Email">Email: </string>
+    <string name="Remitente">Remitente: </string>
+    <string name="Asunto">Asunto: </string>
+    <string name="Mensaje">Mensaje: </string>
+    <string name="Refresh">Refrescar </string>
+    <string name="Salir">Salir </string>
+    <string name="Sincr">Sincronizar </string>
+    <string name="Regresar">Regresar </string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Agregar linea de arriba -->
+    <item
+        android:id="@+id/menuSincr"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:orderInCategory="100"
+        android:title="@string/Sincr"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuVolver"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:orderInCategory="101"
+        android:title="@string/Regresar" />
+</menu>
