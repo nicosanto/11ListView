@@ -11,6 +11,7 @@ import java.util.List;
  */
 //Extiende de la clase BaseAdapter, necesario los 4 Metodos
 public class ContactoAdapter  extends BaseAdapter {
+    //Constante
     static final int largoCadena = 10;
     //Dentro de la lista colocamos la clase de tipo Contacto.java
     private List<Contacto> contactos;
@@ -40,38 +41,33 @@ public class ContactoAdapter  extends BaseAdapter {
         View view;
         //Solo muestra los items necesarios.
         //optimizacion de reutilizacion de recursos
-        if(convertView == null){
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_contacto,parent,false);
-        }else{ //si ya existe
-            view = convertView;
+            if(convertView == null){
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_contacto,parent,false);
+            }else{ //si ya existe
+                view = convertView;
         }
 
         Contacto contacto = (Contacto)getItem(position);
         //adapter_contacto.xml
+        TextView txtColor = (TextView) view.findViewById(R.id.txtColor);
         TextView txtRemitente = (TextView) view.findViewById(R.id.txtRemitente);
         TextView txtAsunto = (TextView) view.findViewById(R.id.txtAsunto);
         TextView txtFecha = (TextView) view.findViewById(R.id.txtFecha);
-        TextView txtColor = (TextView) view.findViewById(R.id.txtColor);
-
         TextView txtMensaje = (TextView) view.findViewById(R.id.txtMensaje);
 
         // txtIcono.getBackground()setColorFilter(Color.parseColor(mensaje.getColor()),PorterDuff,Mode)
 
+        txtColor.setText(contacto.getRemitente().substring(0,1));
+        txtRemitente.setText(String.valueOf(contacto.getRemitente()));
+        txtAsunto.setText(String.valueOf(contacto.getAsunto()));
+        txtFecha.setText(String.valueOf(contacto.getFecha()));
+       // txtColor.setText(String.valueOf(contacto.getColor()));
 
         if (contacto.getMensaje().length()>largoCadena){
             txtMensaje.setText(contacto.getMensaje().substring(0,largoCadena)+"...");
         }else{
-           txtMensaje.setText(contacto.getMensaje());
+            txtMensaje.setText(contacto.getMensaje());
         }
-
-
-        txtColor.setText(contacto.getRemitente().substring(0,1));
-        txtRemitente.setText(String.valueOf(contacto.getRemitente()));
-
-
-        txtAsunto.setText(String.valueOf(contacto.getAsunto()));
-        txtFecha.setText(String.valueOf(contacto.getFecha()));
-       // txtColor.setText(String.valueOf(contacto.getColor()));
 
         return view;
     }

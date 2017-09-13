@@ -13,7 +13,6 @@ public class Contacto implements Serializable {
     private String apellido;
     //------*---------
     private String remitente;
-    private String destinatario;
     private String asunto;
     private String mensaje;
     private String fecha;
@@ -28,9 +27,9 @@ public class Contacto implements Serializable {
         //  this.nombre = nombre;
           //this.apellido = apellido;
         this.remitente = remitente;
-         this.asunto = asunto;
+        this.asunto = asunto;
         this.mensaje = mensaje;
-         this.fecha = fecha;
+        this.fecha = fecha;
         this.email = email;
     }
 
@@ -60,13 +59,6 @@ public class Contacto implements Serializable {
     }
 
     //------*---------
-    public String getDestinatario() {
-        return destinatario;
-    }
-
-    public void setDestinatario(String destinatario) {
-        this.destinatario = destinatario;
-    }
 
     public String getMensaje() {
         return mensaje;
@@ -100,6 +92,14 @@ public class Contacto implements Serializable {
         this.fecha = fecha;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     //Crear una propiedad con colores y devolver uno random.
     public String getColor() {
         return color;
@@ -107,13 +107,5 @@ public class Contacto implements Serializable {
 
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }

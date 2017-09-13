@@ -2,8 +2,8 @@
 
 <menu xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto">
-<!-- Agregar linea de arriba -->
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!-- Items -->
     <item
         android:id="@+id/menuRefresh"
         android:icon="@android:drawable/ic_menu_rotate"

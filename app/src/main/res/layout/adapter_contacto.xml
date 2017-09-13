@@ -47,7 +47,6 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-
         </LinearLayout>
 
         <TextView
@@ -59,7 +58,6 @@
             android:padding="1dp"
             android:textSize="16sp" />
 
-
         <TextView
             android:id="@+id/txtMensaje"
             android:layout_width="match_parent"
@@ -69,6 +67,5 @@
 
             android:padding="1dp"
             tools:ignore="HardcodedText" />
-
     </LinearLayout>
 </LinearLayout>

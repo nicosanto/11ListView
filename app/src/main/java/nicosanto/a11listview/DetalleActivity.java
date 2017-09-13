@@ -1,12 +1,9 @@
 package nicosanto.a11listview;
 
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +24,6 @@ public class DetalleActivity extends AppCompatActivity {
         asunto= (TextView)findViewById(R.id.txtAsunto);
         mensaje= (TextView)findViewById(R.id.txtMensaje);
 
-
         Contacto obj = (Contacto)getIntent().getExtras().getSerializable("objeto");
 
         email.setText("De: "+obj.getEmail());
@@ -47,7 +43,7 @@ public class DetalleActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.menuSincr:
-                Toast.makeText(DetalleActivity.this,"Opcion1!!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(DetalleActivity.this,"Opcion1.",Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.menuVolver:
                 Toast.makeText(DetalleActivity.this,"Click en Cerrar Actividad",Toast.LENGTH_SHORT).show();
@@ -57,7 +53,4 @@ public class DetalleActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
-
-
 }

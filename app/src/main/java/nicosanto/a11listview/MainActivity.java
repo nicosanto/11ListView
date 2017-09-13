@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-                Toast.makeText(context,"Click en Refresh!!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(context,"Click en Refresh.",Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.menuExit:
-                Toast.makeText(MainActivity.this,"Click en Cerrar",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Click en Cerrar.",Toast.LENGTH_SHORT).show();
                 finish();
                 return true;
             default:
@@ -61,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
         contactos.add(new Contacto("Remitente","Asunto","0123456789-Esto es el cuerpo del mensaje del email. =D ","Fecha: 04-09-17","remitente@gmail.com"));
         contactos.add(new Contacto("Nico Santomartino","Secundary Text","Mensaje: Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500","Fecha: 05-09-17","nicosantomartino@gmail.com"));
-        contactos.add(new Contacto("Javier Santomartino","Tercer Texto 13 texto","Mensaje: programando ","Fecha: 04-09-17","Javier@gmail.com"));
+        contactos.add(new Contacto("Javier Santomartino","Tercer Texto 13 texto","Mensaje: programando ","Fecha: 11-09-17","Javier@gmail.com"));
         contactos.add(new Contacto("Juan Pablo","4º Texto","Este es el cuarto texto","Fecha: 05-09-17","Juan@gmail.com"));
-        contactos.add(new Contacto("Martin Allende","Quinto Texto","Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.","Fecha: 04-09-17","MartinElLoco1@gmail.com"));
+        contactos.add(new Contacto("Martin Allende","Quinto Texto","Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.","Fecha: 08-09-17","MartinElLoco1@gmail.com"));
         contactos.add(new Contacto("Nico Campos","Septimo Text","Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. ","Fecha: 05-09-17","NicoCampos48@gmail.com"));
-        contactos.add(new Contacto("David Gonzalez","Octavo Text","El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados.","Fecha: 05-09-17","DavidGonzalez@gmail.com"));
+        contactos.add(new Contacto("David Gonzalez","Octavo Text","El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados.","Fecha: 18-09-17","DavidGonzalez@gmail.com"));
         contactos.add(new Contacto("Esteban Alonso","Noveno Text","Las secciones 1.10.32 y 1.10.33 de \"de Finibus Bonorum et Malorum\" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.","Fecha: 04-09-17","AlonzoEsteban12@gmail.com"));
         contactos.add(new Contacto("Cristina Flores","10 Text","Haciendo el trabajo de app movil","Fecha: 05-09-17","notengocorreo@gmail.com"));
         contactos.add(new Contacto("Yesi Quiroga","11 textp","Cuerpo del mensaje","Fecha: 09-09-17","Yesi02Q@gmail.com"));
