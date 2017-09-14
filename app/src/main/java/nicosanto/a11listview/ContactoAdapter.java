@@ -12,7 +12,7 @@ import java.util.List;
 //Extiende de la clase BaseAdapter, necesario los 4 Metodos
 public class ContactoAdapter  extends BaseAdapter {
     //Constante
-    static final int largoCadena = 10;
+    private final int largoCadena = 10;
     //Dentro de la lista colocamos la clase de tipo Contacto.java
     private List<Contacto> contactos;
     //Constructor

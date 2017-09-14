@@ -35,15 +35,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.menuRefresh:
-
-                sflLista.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-                    @Override
-                    public void onRefresh() {
-                        cargarLista();
-                        sflLista.setRefreshing(false);
-                    }
-                });
-
                 Toast.makeText(context,"Click en Refresh.",Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.menuExit:
@@ -120,9 +111,9 @@ public class MainActivity extends AppCompatActivity {
               //El obj tendra el objeto seleccionado del listView con toda la info.
                Contacto obj = (Contacto) parent.getItemAtPosition(position);
 
-                Intent paso = new Intent(getApplicationContext(),DetalleActivity.class);
-                paso.putExtra("objeto",(Serializable) obj);
-                startActivity(paso);
+                Intent intent = new Intent(getApplicationContext(),DetalleActivity.class);
+                intent.putExtra("objeto",(Serializable) obj);
+                startActivity(intent);
             //Setcolor..
             }
         });
