@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(context,"Click en Refresh.",Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.menuExit:
-                Toast.makeText(MainActivity.this,"Click en Cerrar.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Click en C errar.",Toast.LENGTH_SHORT).show();
                 finish();
                 return true;
             default:
